@@ -93,5 +93,5 @@ if __name__ == "__main__":
         print("Usage: python server.py [-p, --port [0..65536]] ")
         sys.exit(1)
 
-    server = Server(host="localhost", port=6566)
+    server = Server(host="localhost", port=(int(port_args[1])))
     server.listen()
